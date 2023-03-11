@@ -1,0 +1,23 @@
+start
+print "Enter Employee Id : "
+read empId
+print "Enter Employee Name : "
+read empName
+print "Enter Department : "
+read empDept
+print "Enter Clock-In Time : "
+read clockIn
+print "Enter break Start Time : "
+read breakStart
+print "Enter break Stop Time : "
+read breakStop
+print "Enter Clock-Out Time : "
+read clockOut
+declare time_t
+ltime=time(NULL)
+if (clockIn=="1:30" && breakStart=="2:00" && breakEnd=="2:30" && clockOut=="7:30")
+	print empId and clockIn and clockOut and breakEnd
+	print asctime(localtime(&ltime))
+else 
+	print "Worst Employee"
+stop
